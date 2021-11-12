@@ -1,0 +1,258 @@
+.menyu {
+  max-width: 1400px;
+  background-color: #fff;
+  margin: 0 auto;
+  
+
+
+
+  &__sec {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+  }
+
+  &__big-img {
+    position: relative;
+    padding-right: 15px;
+    z-index: 0;
+  }
+  &__wrap {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 10;
+  }
+
+  &__big-subtitle {
+    font-size: 24px;
+    line-height: 24px;
+    color: $hover-color;
+    font-family: $font-primary;
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    font-size: calc(15px + (50 - 20) * ((100vw - 320px) / (1280 - 320)));
+    line-height: 45px;
+    color: $text-color;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  &__button-list {
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+  }
+  &__big-photo {
+    width: 100% !important;
+  }
+
+  &__slider-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $white-color;
+    color: $text-color;
+    opacity: 1;
+    margin-right: 10px;
+
+    &:hover {
+      background-color: $hover-color;
+      color: $text-color;
+    }
+    &:focus {
+      color: $text-color;
+    }
+  }
+  &__small-img {
+    width: 100%;
+  }
+
+  &__small-top {
+    position: relative;
+  }
+  &__small-top-img {
+    padding-bottom: 15px;
+  }
+  &__small-bottom-img {
+    padding-top: 15px;
+  }
+  &__small-images {
+    padding-left: 15px;
+  }
+
+  &__small-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+  &__small-title {
+    font-size: 24px;
+    line-height: 24px;
+    line-height: 30px;
+    color: $text-color;
+    margin-bottom: 110px;
+  }
+  &__small-bottombox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__small-bottom {
+    position: relative;
+  }
+
+  &__small-subtitle {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: $font-primary;
+    color: $white-color;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  &__sale {
+    font-size: 40px;
+    color: #f4ed23;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: $white-color;
+    margin-bottom: 20px;
+  }
+
+  &__bottom-btn {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 35px 10px 25px;
+    border-radius: 30px;
+    color: $white-color;
+    background-color: $hover-color;
+    text-decoration: none;
+    position: relative;
+    @include transition;
+
+    &::before {
+      content: "\f101";
+      font-family: "Font Awesome 5 Pro";
+      position: absolute;
+      top: 8px;
+      right: 17px;
+      @include transition;
+      font-size: 12px;
+    }
+  
+    &:hover {
+      color: $hover-color;
+      background-color: $white-color;
+    }
+    &:hover::before {
+      right: 12px;
+      color: $hover-color;
+    }
+  }
+}
+
+/*----------MENYU SECTION RESPONSIVE-------------- */
+@media screen and (max-width:1200px) {
+  .menyu__small-title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .menyu__sec {
+    flex-direction: column;
+  }
+  .menyu__small-images {
+    display: flex;
+  }
+  .menyu__big-img{
+    padding-right: 0;
+  }
+  
+  .menyu__small-bottom-img {
+    padding: 0 0 0 15px;
+    width: 100%;
+  }
+  .menyu__small-top-img {
+    padding: 0 15px 0 0;
+    width: 100%;
+  }
+  .menyu__small-images {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width:768px) {
+  .menyu {
+    &__big-subtitle {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+@media screen and (max-width:650px) {
+  .menyu__small-images {
+    flex-direction: column;
+  }
+  .menyu__small-top-img {
+    padding: 0;
+  }
+  .menyu__small-bottom-img {
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  .menyu__wrap {
+    top: 50px;
+    left: 50px;
+  }
+}
+@media screen and (max-width:500px) {
+  .menyu__big-subtitle {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .menyu__small-title,
+  .menyu__title {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .menyu__small-subtitle {
+    font-size: 14px;
+  }
+  .menyu__sale {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .menyu__text {
+    font-size: 11px;
+  }
+  .menyu__button-list {
+    bottom: 50px;
+    right: 50px;
+  }
+  .menyu__slider-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
+
+
+

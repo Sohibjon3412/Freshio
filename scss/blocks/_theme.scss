@@ -1,0 +1,23 @@
+.theme {
+    position: fixed;
+    top: 45%;
+    right: -70px;
+    z-index: 1000000000;
+
+    &__button {
+        width: 170px;
+        height: 30px;
+        border: none;
+        color: $white-color;
+        background-color: #0e472e;
+        transform: rotate(-90deg);
+    }
+
+}
+/*---------THEME BUTTON RESPONSIVE-----------*/
+
+@media screen and (max-width:992px) {
+    .theme {
+        display: none;
+    }
+}

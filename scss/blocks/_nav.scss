@@ -1,0 +1,141 @@
+.nav {
+
+  &__list {
+    @include flex;
+    @include list-unstyled;
+    margin-left: 20px;
+  }
+
+  &__item {
+    padding: 20px 30px;
+    cursor: pointer;
+    
+
+    &:hover .nav__link {
+      color: $hover-color;
+    }
+    &:nth-child(1):hover .nav__drop-menu{
+      @include hover-drop;
+    }
+    &:nth-child(2):hover .nav__shop-drop {
+      @include hover-drop;
+    }
+    &:nth-child(3):hover .nav__pages-drop {
+      @include hover-drop;
+    }
+
+  }
+  &__dropdown-item {
+    position: relative;
+    margin-right: 17px;
+
+    &::before {
+      content: "\f107";
+      font-family: "Font Awesome 5 Pro";
+      position: absolute;
+      top: 20px;
+      right: 8px;
+      color: $white-color;
+      @include transition;
+
+    }
+    &:hover::before {
+      color: $hover-color !important;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    font-weight: 700;
+    color: $white-color;
+    text-decoration: none;
+    @include transition;
+  }
+  &__drop-menu {
+    width: 170px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    @include hover-drop-item;
+  }
+  &__drop-list {
+    width: 100% !important;
+    @include list-unstyled;
+    padding: 20px;
+    @include transition;
+  }
+  &__drop-item {
+    margin-bottom: 12px;
+  }
+  &__drop-link {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $black-color;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  &__shop-drop {
+    position: absolute;
+    top: 65px;
+    left: -100px;
+    padding-right: 80px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    @include hover-drop-item;
+  }
+  &__drop-title {
+    font-weight: 800;
+    font-size: 13px;
+  }
+  &__lists {
+    width: 140px !important;
+  }
+  &__pages-drop {
+    position: absolute;
+    top: 65px;
+    left: -180px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    @include hover-drop-item;
+  }
+  &__pages-list {
+    @include list-unstyled;
+    @include flex;
+    justify-content: space-between;
+    height: 200px;
+  }
+  &__pages-item {
+    width: 120px;
+    padding: 0 10px;
+  }
+  &__pages-img {
+    width: 120px;
+    border: 1px solid #aaaaaa63;
+    @include transition;
+
+    &:hover {
+      border-color: $hover-color;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* NAV SECTION RESPONSIVE */
+@media screen and (max-width:1220px) {
+  .nav__pages-item {
+    width: 100px;
+  }
+}
+@media screen and (max-width:1080px) {
+  .nav__pages-item {
+    width: 85px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .nav {
+    display: none;
+  }
+}

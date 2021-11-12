@@ -1,0 +1,46 @@
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  background-color: $white-color;
+  display: none;
+  z-index: 100000000;
+
+  &__list {
+    @include flex;
+    @include list-unstyled;
+    text-align: center;
+  }
+
+  &__item:not(:last-child) {
+    border-right: 1px solid #aaa;
+  }
+
+  &__icon {
+    color: $black-color;
+    font-size: 21px;
+  }
+
+  &__txt {
+    color: $text-color;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+/* BOTTOM MENU RESPONSIVE */
+
+@media screen and (max-width:992px) {
+  .bottom-menu {
+    display: block;
+  }
+}

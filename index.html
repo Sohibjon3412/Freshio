@@ -4,11 +4,1458 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+  <title>Freshio</title>
+  <!--------ICONS USAGE LINK---------->
+  <link rel="shortcut icon" type="image/x-icon" href="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/favicon.ico?1603358296">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!--------ICONS USAGE LINK---------->
+  <!--------FONTS USAGE LINK---------->
+  <link href="//db.onlinewebfonts.com/c/875fffdfa62169a0f131e90f37f1faf4?family=Mazzard+H+Medium" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!--------FONTS USAGE LINK---------->
+  <!--------STYLE USAGE LINK---------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
+  <!--------STYLE USAGE LINK---------->
 </head>
-<body>
+<body id="body-bgtop" class="body-bgbottom" >
+  <!--------SITE HERO SECTION ---------->
+  <section class="hero">
+    <div class="hero__menu">
+      <div class="hero__container container">
+        <div class="hero__sec"> 
+          <p class="hero__text">FREE express international delivery + EASY returns</p>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <a class="hero__link" href="about.html">ABOUT</a>
+            </li>
+            <li class="hero__item">
+              <a class="hero__link" href="#">FAQ</a>
+            </li>
+            <li class="hero__item">
+              <a class="hero__link" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------SITE HEADER AND MAIN SECTION ---------->
+  <main>
+    <!--------SITE HEADER SECTION ---------->
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__sec">
+          <div class="header-menu">
+            <button class="header-menu__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="header-menu__width offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h5>
+                <button type="button" class="header-menu__close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">x Close</button>
+              </div>
+              <div class="header-menu__body offcanvas-body">
+                <ul class="header-menu__list">
+                  <li class="header-menu__item">
+                    <a class="header-menu__link header-menu__right" href="#">Home <i class="bi bi-chevron-double-right"></i></a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link header-menu__right" href="#">Shop <i class="bi bi-chevron-double-right"></i></a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link header-menu__right" href="#">Pages <i class="bi bi-chevron-double-right"></i></a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#">Blog</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#">Contact</a>
+                  </li>
 
+                </ul>
+              </div>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            </div>
+          </div>
+          <a class="header__logo" href="index.html">
+            <img class="header__logo-img" src="media/img/freshio-logo.jpg" alt="freshio-logo">
+          </a>
+          <form class="header__form" method="get" action="https://echo.htmlacademy.ru/">
+            <label class="header__form-label" for="search">
+              <i class="bi bi-search"></i>
+            </label>
+            <input class="header__inp" type="search" name="search" id="search" placeholder="Enter Keyword..." required>
+            <button class="header__search-btn">Search</button>
+          </form>
+          <ul class="header__list">
+            <li class="header__item hidden-des">
+              <button class="header__btn modall-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <i class="fal fa-user-alt"></i>
+              </button>
+            </li>
+            <li class="header__item hidden-des">
+              <button class="header__btn">
+                <i class="bi bi-heart"></i>
+              </button>
+            </li>
+            <li class="header__item">
+              <button class="header__btn">
+                <i class="bi bi-basket"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!--------RIGHT OFFCANVAR MENYU ---------->
+        <div class="offcanvas offcanvas-end modall-width" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <a class="header__logo" href="index.html">
+              <img class="header__logo-img" src="media/img/freshio-logo.jpg" alt="freshio-logo">
+            </a>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body modall">
+            <p class="modall__text">Existing Account Login</p>
+            <form class="modall__form" action="https://echo.htmlacademy.ru/">
+              <label class="visually-hidden" for="email"> Email</label>
+              <input class="modall__input" type="email" name="email" id="email"   placeholder="Email Address" required>
+              <label class="visually-hidden" for="password"> password</label>
+              <input class="modall__input" type="password" name="password" id="password"  placeholder="Password" required>
+              <div class="modall__wrap">
+                <div class="modall__des">
+                  <input class="modall__check" type="checkbox" id="check">
+                  <label class="modall__label" for="check">Remember Me</label>
+                </div>
+                <a class="modall__forgot" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Forgot Password ?</a>
+              </div>
+              <button class="modall__btn">Login</button>
+              <div class="collapse" id="collapseExample">
+                <form class="modall__form" action="https://echo.htmlacademy.ru/">
+                  <h3>Reset Password</h3>
+                  <label class="visually-hidden" for="emaill"> Emaill</label>
+                  <input class="modall__input" type="email" name="emaill" id="emaill"   placeholder="Email Address" required>
+                  <button class="modall__btn">Reset Password</button>
+                </form>
+              </div>
+            </form>
+            <p class="modall__text">Connect with Social Networks</p>
+            <ul class="modall__list">
+              <li class="modall__item">
+                <a class="modall__link" href="#" target="_blank">
+                  <i class='bx bxl-facebook'></i>
+                </a>
+              </li>
+              <li class="modall__item">
+                <a class="modall__link" href="#" target="_blank">
+                  <i class='bx bxl-google'></i>
+                </a>
+              </li>
+              <li class="modall__item">
+                <a class="modall__link" href="#" target="_blank">
+                  <i class='bx bxl-twitter' ></i>
+                </a>
+              </li>
+            </ul>
+            <p class="modall__text">Connect with Social Networks</p>
+            <form class="modall__form" action="https://echo.htmlacademy.ru/">
+              <label class="visually-hidden" for="name"> name</label>
+              <input class="modall__input" type="text" name="name" id="name"   placeholder="First Name" required>
+              <label class="visually-hidden" for="lastname"> lastname</label>
+              <input class="modall__input" type="text" name="lastname" id="lastname"  placeholder="Last Name" required>
+              <label class="visually-hidden" for="email"> Email</label>
+              <input class="modall__input" type="email" name="email" id="email"   placeholder="Email Address" required>
+              <label class="visually-hidden" for="password"> password</label>
+              <input class="modall__input" type="password" name="password" id="password"  placeholder="Password" required>
+              <div class="modall__des">
+                <input class="modall__check" type="checkbox" id="terms">
+                  <label class="modall__label" for="terms">
+                    I agree to the terms.</label>
+              </div>
+              <button class="modall__btn">Create an account</button>
+            </form>
+            <div class="modall__flex">
+              <div>
+                <p class="modall__launge">Language:</p>
+                <div class="modall__flags">
+                  <button class="modall__flag-btn modall__flag-btn--active">
+                    <img class="modall__flag" src="media/img/flag1.jpg" alt="flag1">
+                  </button>
+                  <button class="modall__flag-btn">
+                    <img class="modall__flag" src="media/img/flag2.jpg" alt="flag1">
+                  </button>
+                  <button class="modall__flag-btn">
+                    <img class="modall__flag" src="media/img/flag3.jpg" alt="flag1">
+                  </button>
+                </div>
+                <div class="modall__flags">
+                  <button class="modall__flag-btn">
+                    <img class="modall__flag" src="media/img/flag4.jpg" alt="flag1">
+                  </button>
+                  <button class="modall__flag-btn">
+                    <img class="modall__flag" src="media/img/flag5.jpg" alt="flag1">
+                  </button>
+                  <button class="modall__flag-btn">
+                    <img class="modall__flag" src="media/img/flag6.jpg" alt="flag1">
+                  </button>
+                </div>
+                <p class="modall__launge">Currency:</p>
+                <div class="modall__current">
+                  <a class="modall__current-link" href="#">EUR</a>
+                  <a class="modall__current-link modall__current-link--active" href="#">USD</a>
+                </div>
+              </div>
+              <ul class="modall__lists">
+                <li class="modall__items">
+                  <i class="bi bi-box-arrow-in-right"></i> Sign in
+                </li>
+                <li class="modall__items">
+                  <i class="bi bi-person"></i> My Account
+                </li>
+                <li class="modall__items">
+                  <i class="bi bi-suit-heart"></i> Wishlist (0)
+                </li>
+                <li class="modall__items">
+                  <i class='bx bx-copy'></i> Compare (0)
+                </li>
+                <li class="modall__items">
+                  <i class='bx bx-check-square' ></i> Checkout
+                </li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------SITE NAVBAR SECTION ---------->
+        <navbar class="navbar">
+          <div class="navbar__container container">
+            <div class="navbar__sec">
+              <div class="navbar__des">
+                <div class="navbar__dropdown dropdown">
+                  <button type="button" class="navbar__drop-btn dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class='bx bx-menu' ></i> Shop by Department
+                  </button>
+                  <ul class="navbar__list dropdown-menu">
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">Fruits & Vegetables</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">Supplyments</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">Dairy Bread & Eggs</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">Package Foods</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">Beauty & Care</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">Health & Wellness</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">
+                        Baby & Infants</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">Home Care</a>
+                    </li>
+                    <li class="navbar__item">
+                      <a class="navbar__link" href="#">
+                        Hot Offers</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--------SITE NAV SECTION ---------->
+                <nav class="navbar__nav nav">
+                  <ul class="nav__list">
+                    <li class="nav__item nav__dropdown-item">
+                      <a class="nav__link" href="#">Home</a>
+                      <div class="nav__drop-menu">
+                        <ul class="nav__drop-list">
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Home 1</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Home 2</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Home 3</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Home 4</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Home 5</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Home 6</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Home 7</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Home 8</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item nav__dropdown-item">
+                      <a class="nav__link" href="#">Shop</a>
+                      <div class="nav__shop-drop">
+                        <ul class="nav__drop-list nav__lists">
+                          <li class="nav__drop-item">
+                            <h3 class="nav__drop-title" href="#">
+                              Categories 1</h3>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">
+                              Vegatable</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Tomato</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Cabbage</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Juise</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Meat</a>
+                          </li>
+                        </ul>
+                        <ul class="nav__drop-list nav__lists">
+                          <li class="nav__drop-item">
+                            <h3 class="nav__drop-title" href="#">
+                              Categories 2</h3>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">
+                             Beef</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Pork</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Coconut</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Broccoli</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Fish</a>
+                          </li>
+                        </ul>
+                        <ul class="nav__drop-list nav__lists">
+                          <li class="nav__drop-item">
+                            <h3 class="nav__drop-title" href="#">
+                              Categories 3</h3>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">
+                            Seafood</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Octopus</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Fish</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Pork</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">More</a>
+                          </li>
+                        </ul>
+                        <ul class="nav__drop-list nav__lists">
+                          <li class="nav__drop-item">
+                            <h3 class="nav__drop-title" href="#">
+                              Categories 4</h3>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">
+                              Vegetables</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Fresh Meat</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Fruit & Nut Gifts</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Fresh Berries</a>
+                          </li>
+                          <li class="nav__drop-item">
+                            <a class="nav__drop-link" href="#">Fat Freezing</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item nav__dropdown-item">
+                      <a class="nav__link" href="#">Pages</a>
+                      <div class="nav__pages-drop">
+                        <ul class="nav__pages-list">
+                          <li class="nav__pages-item">
+                            <a class="nav__pages-link" href="#">
+                              <img class="nav__pages-img" src="media/img/dropdown-image.jpg" alt="img">
+                            </a>
+                          </li>
+                          <li class="nav__pages-item ">
+                            <a class="nav__pages-link" href="#">
+                              <img class="nav__pages-img" src="media/img/dropdown-image.jpg" alt="img">
+                            </a>
+                          </li>
+                          <li class="nav__pages-item">
+                            <a class="nav__pages-link" href="#">
+                              <img class="nav__pages-img" src="media/img/dropdown-image.jpg" alt="img">
+                            </a>
+                          </li>
+                          <li class="nav__pages-item">
+                            <a class="nav__pages-link" href="#">
+                              <img class="nav__pages-img" src="media/img/dropdown-image.jpg" alt="img">
+                            </a>
+                          </li>
+                          <li class="nav__pages-item">
+                            <a class="nav__pages-link" href="#">
+                              <img class="nav__pages-img" src="media/img/dropdown-image.jpg" alt="img">
+                            </a>
+                          </li>
+                          <li class="nav__pages-item">
+                            <a class="nav__pages-link" href="#">
+                              <img class="nav__pages-img" src="media/img/dropdown-image.jpg" alt="img">
+                            </a>
+                          </li>
+                          <li class="nav__pages-item">
+                            <a class="nav__pages-link" href="#">
+                              <img class="nav__pages-img" src="media/img/dropdown-image.jpg" alt="img">
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="#">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </navbar>
+        <div class="bottom-menu">
+          <div class="bottom-menu__container container">
+            <ul class="bottom-menu__list">
+              <li class="bottom-menu__item col-3">
+                <button class="bottom-menu__btn">
+                  <i class="bottom-menu__icon fal fa-store"></i>
+                    <p class="bottom-menu__txt">shop</p>
+                </button>
+              </li>
+              <li class="bottom-menu__item col-3">
+                <button class="bottom-menu__btn">
+                  <i class="bottom-menu__icon bi bi-suit-heart"></i>
+                    <p class="bottom-menu__txt">wishlist</p>
+                </button>
+              </li>
+              <li class="bottom-menu__item col-3">
+                <button class="bottom-menu__btn modall-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <i class="bottom-menu__icon fal fa-user-alt"></i>
+                    <p class="bottom-menu__txt">Account</p>
+                </button>
+              </li>
+              <li class="bottom-menu__item col-3">
+                <button class="bottom-menu__btn">
+                  <i class="bottom-menu__icon fal fa-search"></i>
+                    <p class="bottom-menu__txt">Search</p>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--------FOOD MENYU SECTION ---------->
+    <section class="menyu">
+      <div class="menyu__container container">
+        <div class="menyu__sec col-12">
+          <div class="menyu__big-img carousel slide carousel-fade col-lg-8 col-md-12" id="carouselExampleFade" data-bs-ride="carousel">
+            <div class="menyu__slider-list carousel-inner">
+              <div class="menyu__slider carousel-item active">
+                <img class="menyu__big-photo img-fluid" src="media/img/menyu-big-img.jpg" alt="menyu-big-img">
+              </div>
+              <div class="menyu__slider carousel-item">
+                <img class="menyu__big-photo img-fluid" src="media/img/big-img2.jpg" alt="menyu-big-img2">
+              </div>
+              
+            </div>
+            <div class="menyu__wrap">
+              <h2 class="menyu__big-subtitle animate__animated animate__bounce animate__fadeInLeft">Fresh and Tasty</h2>
+              <h3 class="menyu__title animate__animated animate__bounce animate__fadeInRight ">Farm Market <br> Organic Shop</h3>
+              <a class="menyu__btn shop-btn animate__animated animate__bounce animate__fadeInLeft" href="#">Shop Now</a>
+            </div>
+            <div class="menyu__button-list">
+              <button class="menyu__slider-btn menyu__previous carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+              <button class="menyu__slider-btn menyu__next carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+            </div>
+          </div>
+          <div class="menyu__small-images col-lg-4 col-md-12">
+            <div class="menyu__small-top col-lg-12 col-md-6">
+              <img class="menyu__small-top-img img-fluid" src="media/img/menyu-top-img.jpg" alt="menyu-top-img">
+              <div class="menyu__small-box">
+                <h3 class="menyu__small-title">Discover <br> Real Organic <br> Flavors</h3>
+                <a class="menyu__small-btn shop-btn" href="#">Shop Now</a>
+              </div>
+            </div>
+            <div class="menyu__small-bottom col-lg-12 col-md-6">
+              <img class="menyu__small-bottom-img img-fluid" src="media/img/menyu-bottom-img.jpg" alt="menyu-bottom-img">
+              <div class="menyu__small-bottombox">
+                <span class="menyu__small-subtitle">Summer Sale</span>
+                <p class="menyu__sale">50% Off</p>
+                <p class="menyu__text">Vitamins, Supplements and Herbs</p>
+                <a class="menyu__bottom-btn" href="#">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------- START PROCESS SECTION ----------->
+    <section class="process">
+      <div class="process__container container">
+        <ol class="process__list">
+          <li class="process__item col-lg-3 col-md-6 col-sm-12">
+            <img class="process__img" src="media/img/process1-img.png" alt="process1-img">
+            <div class="process__wrap">
+              <h3 class="process__title">Curated Products
+              </h3>
+              <p class="process__text">from Handpicked Sellers</p>
+            </div>
+          </li>
+          <li class="process__item col-lg-3 col-md-6 col-sm-12">
+            <img class="process__img" src="media/img/process2-img.png" alt="process1-img">
+            <div class="process__wrap">
+              <h3 class="process__title">Handmade</h3>
+              <p class="process__text">Made with passion by 300+ curators across the country.</p>
+            </div>
+          </li>
+          <li class="process__item col-lg-3 col-md-6 col-sm-12">
+            <img class="process__img" src="media/img/process3-img.png" alt="process1-img">
+            <div class="process__wrap">
+              <h3 class="process__title">100% Natural</h3>
+              <p class="process__text">Eat local, consume local, closer to nature.</p>
+            </div>
+          </li>
+          <li class="process__item col-lg-3 col-md-6 col-sm-12">
+            <img class="process__img" src="media/img/process4-img.png" alt="process1-img">
+            <div class="process__wrap">
+              <h3 class="process__title">Shipping</h3>
+              <p class="process__text">Across West & East India</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!------------ FIXED BUTTONS ------------->
+    <section class="fixed">
+      <div class="fixed__theme theme">
+        <button class="theme__button">THEME OPTIONS</button>
+      </div>
+      <div class="fixed__top top">
+        <a class="top__btn" href="#"><i class="bi bi-chevron-double-up"></i></a>
+      </div>
+    </section>
+    <!----- PRODUCTS SECTION ----->
+    <section class="products">
+      <div class="products__container container">
+        <div class="products__sec">
+          <div class="products__titles">
+            <h2 class="products__title">Featured Products</h2>
+            <a class="products__btn shop-btn" href="#">Shop All</a>
+          </div>
+          <div id="carouselExampleControlsNoTouching" class="products__carusel-slider carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="products__des carousel-inner">
+              <div class="products__item carousel-item active">
+                <ul class="products__list">
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/fruit-img.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/orange-image.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/apple-img.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/banana-img.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="products__item carousel-item ">
+                <ul class="products__list">
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/pamedoro.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/watermelon-img.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/onion-img.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/pamedoro.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="products__buttons">
+                <button class="products__button carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <i class="bi bi-arrow-left"></i>
+                </button>
+                <button class="products__button carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----- GRID PHOTOS SECTION ----->
+    <section class="photos">
+      <div class="photos__container container">
+        <div class="photos__sec row">
+          <div class="photos__wrap col-lg-3 col-md-3 col-sm-12">
+            <a class="photos__link" href="#">
+              <div class="photos__box">
+                <img class="photos__img" src="media/img/fruits-img1.jpg" alt="fruit-img">
+                <div class="photos__link-box">
+                  <a href="#" class="photos__text photos__fruit-txt">Fruits & <br> Vegetables</a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="photos__wrap col-lg-6 col-md-6 col-sm-12">
+            <div class="photos__multi-box photos__box">
+              <a class="photos__link" href="#">
+                <img class="photos__img" src="media/img/fruits-img2.jpg" alt="fruit-img">
+                <div class="photos__link-box">
+                  <a href="#" class="photos__text photos__dairy-txt">Dairy Bread & <br> Eggs</a>
+                </div>
+              </a>
+            </div>
+            <div class="photos__images row">
+              <div class="photos__small-img col-lg-6 col-md-6 col-sm-12">
+                <a class="photos__link " href="#">
+                  <div class="photos__box">
+                    <img class="photos__img" src="media/img/fruits-img3.jpg" alt="fruit-img">
+                    <div class="photos__link-box">
+                      <a href="#" class="photos__text photos__package-txt">Package <br> Foods</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="photos__small-img col-lg-6 col-md-6 col-sm-12">
+                <a class="photos__link " href="#">
+                  <div class="photos__box">
+                    <img class="photos__img" src="media/img/fruits-img4.jpg" alt="fruit-img">
+                    <div class="photos__link-box">
+                      <a href="#" class="photos__text photos__package-txt">Beverages</a>
+                    </div>
+                  </div>
+                  </div>
+                </a>
+            </div>
+          </div>
+          <div class="photos__wrap col-lg-3 col-md-3 col-sm-12">
+            <div class="photos__box">
+              <a class="photos__link" href="#">
+                <img class="photos__img" src="media/img/fruits-img5.jpg" alt="fruit-img">
+              </a>
+              <div class="photos__link-box">
+                <a href="#" class="photos__text txt photos__fruit-txt">Health & <br> Wellness</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----- PORDUCTS SECTION ----->
+    <section class="products">
+      <div class="products__container container">
+        <div class="products__sec">
+          <div class="products__titles">
+            <h2 class="products__title">Best Seller</h2>
+            <a class="products__btn shop-btn" href="#">Shop All</a>
+          </div>
+          <div id="carouselExampleControlsNoTouching1" class="products__carusel-slider carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="products__des carousel-inner">
+              <div class="products__item carousel-item active">
+                <ul class="products__list">
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/fruit-img.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/orange-image.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/apple-img.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/banana-img.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="products__item carousel-item ">
+                <ul class="products__list">
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/pamedoro.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/watermelon-img.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/onion-img.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="products__product ">
+                    <a class="products__link" href="#">
+                      <img class="products__img" src="media/img/pamedoro.jpg" alt="fruit-img">
+                      <h3 class="products__subtitle">
+                        Nut & Seed
+                      </h3>
+                      <p class="products__text">
+                        Organic High-Curcumin Turmeric Powder
+                      </p>
+                    </a>
+                    <span class="products__price">
+                      $22.00
+                    </span> <br>
+                    <a class="products__card shop-btn" href="#">ADD TO CART</a>
+                    <ul class="products__icon-list">
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-eye"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-heart"></i>
+                        </a>
+                      </li>
+                      <li class="products__icon-item">
+                        <a class="products__icon-link" href="#">
+                          <i class="bi bi-shuffle"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="products__buttons">
+                <button class="products__button carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching1" data-bs-slide="prev">
+                  <i class="bi bi-arrow-left"></i>
+                </button>
+                <button class="products__button carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching1" data-bs-slide="next">
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----- QUOTE SECTION ----->
+    <section class="quote">
+      <div class="quote__container container">
+        <div class="quote__sec"> 
+          <div class="quote__img-sec col-lg-6 col-md-6 col-sm-12">
+            <img class="quote__img" src="media/img/girl-img.jpg" alt="quote-img">
+          </div>
+          <div class="quote__wrap col-lg-6 col-md-6 col-sm-12">
+            <h2 class="quote__title">A shop for good people by good people</h2>
+            <p class="quote__text">Buy natural, sustainable and chemicalfree products from local sellers across the country.</p>
+            <p class="quote__text">We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, two-sided marketplace which thrives on trust and is built on community and quality content.</p>
+            <a class="quote__btn shop-btn" href="#">Store Location </a>
+          </div>
+        </div>
+        <div class="quote__sec">
+          <div class="quote__img-sec col-lg-6 col-md-6 col-sm-12">
+            <img class="quote__img" src="media/img/farm-img.jpg" alt="farm-img">
+          </div>
+          <div class="quote__slide col-lg-6 col-md-6 col-sm-12">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="quote__descrip">
+                    <h2 class="quote__title">Why customer love us
+                    </h2>
+                    <p class="quote__text">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                    <span class="quote__item">Pragya - Bellandur Store</span>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="quote__descrip">
+                    <h2 class="quote__title">Why customer love us
+                    </h2>
+                    <p class="quote__text">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                    <span class="quote__item">Pragya - Bellandur Store</span>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="quote__descrip">
+                    <h2 class="quote__title">Why customer love us
+                    </h2>
+                    <p class="quote__text">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                    <span class="quote__item">Pragya - Bellandur Store</span>
+                  </div>
+                </div>
+              </div>
+              <div class="quote__buttons carousel-indicators">
+                <button class="quote__button active" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
+                <button class="quote__button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button class="quote__button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----- SPONSOR SECTION ----->
+    <section class="sponsor">
+      <div class="sponsor__container container">
+        <div class="sponsor__sec">
+          <div id="carouselExampleControlss" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <ul class="sponsor__list">
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/natural-img.jpg" alt="sponsor-logo">
+                  </li>
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/beatiful-img.jpg" alt="sponsor-logo">
+                  </li>
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/health-img.jpg" alt="sponsor-logo">
+                  </li>
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/eco-img.jpg" alt="sponsor-logo">
+                  </li>
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/natural-img2.jpg" alt="sponsor-logo">
+                  </li>
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/organic-img.jpg" alt="sponsor-logo">
+                  </li>
+                </ul>
+                
+              </div>
+              <div class="carousel-item">
+                <ul class="sponsor__list">
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/health-img.jpg" alt="sponsor-logo">
+                  </li>
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/organic-img.jpg" alt="sponsor-logo">
+                  </li>
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/eco-img.jpg" alt="sponsor-logo">
+                  </li>
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/natural-img2.jpg" alt="sponsor-logo">
+                  </li>
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/natural-img.jpg" alt="sponsor-logo">
+                  </li>
+                  <li class="sponsor__item">
+                    <img class="sponsor__logo img-fluid" src="media/img/beatiful-img.jpg" alt="sponsor-logo">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="carousel-control-prev sponsor__button" type="button" data-bs-target="#carouselExampleControlss" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <i class="bi bi-chevron-left"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next sponsor__button" type="button" data-bs-target="#carouselExampleControlss" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <i class="bi bi-chevron-right"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----- FOLLOW SECTION ----->
+    <section class="follow">
+      <div class="follow__container container">
+        <div class="follow__sec">
+          <div class="follow__contact col-lg-6 col-md-6 col-sm-12">
+            <div class="follow__wr">
+              <i class="follow__headphone"></i>
+            </div>
+            <div class="follow__address">
+              <span class="follow__subtitle">Phone Support</span>
+              <p class="follow__text">Call us 24/7</p>
+              <a class="follow__tell" href="tel:+18008866991" title="+18008866991" target="_blank">(1800)-88-66-991</a> <br>
+              <a class="follow__link" href="mailto:contact@example.com" title="contact@example.com" target="_blank">contact@example.com</a>
+            </div>
+          </div>
+          <div class="follow__contact col-lg-6 col-md-6 col-sm-12">
+            <div class="follow__wr">
+              <i class="follow__mail-icon"></i>
+            </div>
+            <div class="follow__address">
+              <span class="follow__subtitle">Daily Updates</span>
+            <p class="follow__text">subscribe us</p>
+            <p class="follow__wrap">Sign up and get a voucher of worth $250.00</p>
+            <form class="follow__form" action="https://echo.htmlacademy.ru/">
+              <label class="follow__label visually-hidden" for="follow">Email</label>
+              <input class="follow__input" type="email" name="email Address" id="follow" placeholder="Email Address...">
+              <button class="follow__btn"><i class="bi bi-arrow-right"></i></button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!----- SITE FOOTER ----->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__sec">
+          <div class="footer__wrap">
+            <h2 class="footer__title">STORE LOCATION</h2>
+            <p class="footer__text">9066 Green Lake Drive Chevy <br>
+              Chase, MD 20815</p>
+            <p class="footer__subtitle">Monday - Saturday:</p>
+            <p class="footer__text">8:00 am - 4:00pm</p>
+            <p class="footer__subtitle">Sunday:</p>
+            <p class="footer__text">9:00 am - 5:00pm</p>
+          </div>
+          <div class="footer__wrap">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <h2 class="footer__title">INFORMATION</h2>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">About us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Blog</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Check out</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Contact</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Service</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__wrap">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <h2 class="footer__title">MY ACCOUNT
+                </h2>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">My Account</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Contact
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Shopping cart</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Shop</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__wrap">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <h2 class="footer__title">CATEGORIES</h2>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Fruits & Vegetables</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Dairy Products</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Package Foods</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Beverage</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Beverage</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__wrap">
+            <h2 class="footer__title">ACCEPT PAYMENT</h2>
+            <img class="footer__img" src="media/img/footer-img.png" alt="footer-img">
+            <h3 class="footer__title">FOLLOW US
+            </h3>
+          </div>
+          
+      </div>
+      <p class="footer__text footer__copyright "> Copyright © 2021 <span>Freshio</span> . All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+.header {
+  max-width: 1400px;
+  padding-top: 30px;
+  margin: 0 auto;
+  background-color: $white-color;
+
+  &__sec {
+    @include flex;
+    justify-content: space-between;
+  }
+
+  &__logo-img {
+    max-width: 130px;
+  }
+
+  &__form {
+    @include flex;
+    position: relative;
+    max-width: 550px;
+    background-color: #f4f4f4;
+    border-radius: 25px;
+    padding: 15px;
+  }
+
+  &__form-label {
+   font-size: 16px;
+   margin-right: 15px;
+  }
+
+  &__inp {
+    width: 250px;
+    outline: none;
+    border-color: transparent;
+    background-color: #f4f4f4;
+    font-size: 14px;
+
+    &::placeholder {
+      color: #aaa;
+    }
+  }
+
+  &__search-btn {
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+  }
+
+  &__list {
+    @include flex;
+    @include list-unstyled;
+
+  }
+
+  &__item {
+    position: relative;
+    @include transition;
+    
+    :hover {
+      background-color: $hover-color;
+      color: $white-color;
+    }
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+    &:not(:first-child)::before {
+      content: "0";
+      width: 20px;
+      height: 20px;
+      color: $white-color;
+      background-color: #e0bf96;
+      border-radius: 50%;
+      position: absolute;
+      top: -10px;
+      right: -9px;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+  &__btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    font-size: 17px;
+    @include transition;
+  }
+  &__icon-active {
+    background-color: red;
+    font-size: 32px;
+  }
+}
+
+/* HEADER RESPONSIVE */
+
+@media screen and (max-width:992px) {
+  .header__form {
+    display: none;
+  }
+  .hidden-des {
+    display: none;
+  }
+}

@@ -1,0 +1,114 @@
+.quote {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: $white-color;
+  padding: 70px 0;
+
+  &__sec {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 15px 40px 15px;
+  }
+  &__sec:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  &__wrap {
+    padding: 0 80px;
+  }
+  &__descrip {
+    width: calc(100% - 48px);
+    padding: 60px 0 0 60px;
+    float: left;
+
+    &::before {
+      content: "";
+      background-image: url("../../media/img/quote-img.png");
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 20px;
+      left: 0;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+    color: $text-color;
+    letter-spacing: -.75px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    max-width: 370px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+  }
+
+  &__btn {
+    color: $hover-color;
+    border-color: $hover-color;
+  }
+  &__item {
+    font-size: 0.875rem;
+    color: #aaa;
+    font-weight: 400;
+  }
+  &__buttons {
+    position: absolute !important;
+    bottom: -100px !important;
+    left:  -100px !important;
+  }
+  &__button {
+    width: 9px !important;
+    height: 9px !important;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    @include transition;
+    margin-right: 8px !important;
+  }
+}
+.carousel-indicators [data-bs-target] {
+  background-color: $black-color !important;
+}
+
+/*---------- QUOTE SECTION RESPONSIVE ----------*/
+@media screen and (max-width:992px) {
+  .quote__wrap {
+    padding: 0 15px;
+  }
+  .quote__descrip {
+    padding: 15px 0 0 60px;
+  }
+}
+@media screen and (max-width:768px) {
+  .quote__wrap {
+    margin-top: 40px;
+  }
+  .quote__descrip {
+    padding: 40px 0 0 40px;
+    margin-bottom: 60px;
+
+    &::before {
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+    }
+  }
+  .quote__buttons {
+    bottom: 0px !important;
+    left:  0px !important;
+  }
+  // .quote__sec:nth-child(2) {
+  //   flex-flow: row-reverse;
+  // }
+  .quote__img {
+    width: 100%;
+  }
+}
+
+

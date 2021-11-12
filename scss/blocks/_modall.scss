@@ -1,0 +1,179 @@
+.modall {
+
+   &__text {
+   text-align: left;
+   font-size: 16px;
+   color: $hover-color;
+   }
+
+   &__input {
+   width: 100%;
+   border: 1px solid #e2e2e2;
+   font-size: 14px;
+   color: $color-primary;
+   padding: 0.5rem 1rem;
+   margin-bottom: 17px;
+   border-radius: 0.25rem;
+   outline-color: $hover-color;
+   }
+
+   &__wrap {
+   @include flex;
+   justify-content: space-between;
+   }
+
+   &__des {
+   @include flex;
+   }
+
+   &__check {
+   margin-right: 5px;
+   }
+
+   &__label {
+   font-size: 12px;
+   color: #414141;
+   }
+
+   &__forgot {
+   text-decoration: none;
+   font-size: 12px;
+   color: $color-primary;
+
+   &:hover {
+      color: $hover-color;
+   }
+   }
+
+   &__btn {
+   width: 100%;
+   border-radius: 25px;
+   border-color: transparent;
+   background-color: $hover-color;
+   color: $white-color;
+   padding: 8px 0;
+   margin-top: 17px;
+   margin-bottom: 17px;
+   @include transition;
+
+   &:active {
+     background-color: #0a472e;
+   }
+   }
+
+   &__list {
+   @include flex;
+   @include list-unstyled;
+   margin-bottom: 17px;
+   }
+
+   &__item {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   cursor: pointer;
+   padding: 9px 12px;
+   border: 1px solid transparent;
+   @include transition;
+
+   &:hover {
+     background-color: transparent !important;
+     border: 1px solid #4c68a2;
+   }
+   &:hover .modall__link {
+     color: #4c68a2;
+   }
+
+   &:nth-child(1) {
+     background-color: #4c68a2;
+     margin-right: 10px;
+   }
+   &:nth-child(2) {
+     background-color: #4285f4;
+     margin-right: 10px;
+   }
+   &:nth-child(3) {
+     background-color: #53d1f8;
+   }
+
+   }
+
+   &__link {
+   color: $white-color;
+   font-size: 15px;
+
+   
+   }
+
+   &__flex {
+   display: flex;
+   justify-content: space-between;
+   }
+
+   &__launge {
+   font-weight: 700;
+   font-size: 14px;
+   display: block;
+   margin-bottom: 10px;
+   color: #aaa;
+   }
+
+   &__flags {
+   margin-bottom: 10px;
+   }
+
+   &__flag-btn {
+   border: none;
+   background-color: transparent;
+
+   &:active {
+     border: 2px solid $hover-color;
+   }
+   }
+ &__flag-btn--active {
+   border: 2px solid $hover-color;
+ }
+   &__flag {
+   width: 20px;
+   }
+
+   &__current {
+   @include flex;
+   justify-content: space-around;
+   }
+
+   &__current-link {
+   color: #aaa;
+   text-decoration: none;
+   font-size: 14px;
+
+   &:hover {
+     color: $hover-color;
+   }
+   }
+
+   &__current-link--active {
+   color: $hover-color;
+   }
+
+   &__lists {
+   @include list-unstyled;
+   border-left: 1px solid #aaa;
+   padding-left: 25px;
+   }
+
+   &__items {
+   font-size: 13px;
+   color: #aaa;
+   cursor: pointer;
+   @include transition;
+   margin-bottom: 10px;
+
+   &:hover {
+     color: $hover-color;
+   }
+   }
+}
+.modall-width {
+width: 300px !important;
+}

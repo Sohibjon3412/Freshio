@@ -1,0 +1,21 @@
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 1000000000000000;
+
+
+    &__btn {
+        padding: 8px 10px;
+        color: $white-color;
+        background-color: $hover-color;
+        border-radius: 50%;
+        font-size: 1.25rem;
+        @include transition;
+
+        &:hover {
+            background-color: $text-color;
+            color: $white-color;
+        }
+    }
+}

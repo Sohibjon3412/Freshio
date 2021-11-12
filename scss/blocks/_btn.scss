@@ -1,0 +1,30 @@
+.shop-btn {
+  font-size: 12px;
+  color: $black-color;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 1px solid $black-color;
+  padding: 0 13px 4px 0;
+  @include transition;
+
+  &::before {
+    content: "\f101";
+    display: block;
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    top: -1px;
+    right: 0;
+    @include transition;
+    font-size: 12px;
+  }
+
+  &:hover {
+    color: $hover-color;
+    border-color: $hover-color;
+  }
+  &:hover::before {
+    right: -5px;
+    color: $hover-color;
+  }
+}

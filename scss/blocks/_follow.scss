@@ -1,0 +1,150 @@
+.follow {
+  max-width: 1400px;
+  background-color: $white-color;
+  margin: 0 auto;
+  padding: 60px 0;
+
+  &__sec {
+    @include flex;
+  }
+
+  &__contact {
+    padding: 40px 0;
+    height: 100%;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    display: flex;
+
+    &:nth-child(2) {
+      margin: 0 30px;
+      padding: 38px 0;
+    }
+  }
+  &__wr {
+    width: 32.803%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e2e2e2;
+  }
+
+  &__headphone {
+    background-image: url("../../media/img/headphone-img.png");
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+  }
+
+  &__address {
+    width: 67.197%;
+    padding: 0 15px 0 25px;
+  }
+
+  &__subtitle {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 700;
+    color: $black-color;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__tell {
+    font-size: 30px;
+    font-weight: 400;
+    color: $hover-color;
+    margin-bottom: 15px;
+    line-height: 30px;
+    text-decoration: none;
+  }
+  &__link {
+    font-size: 14px;
+    color: $text-color;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  &__mail-icon {
+    background-image: url("../../media/img/mail-img.png");
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+  }
+  &__wrap {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: $color-primary;
+    line-height: 20px;
+  }
+
+  &__form {
+    height: 40px;
+    border: 1px
+    solid #e2e2e2;
+    width: 100%;
+    border-radius: 50px;
+    padding: 0 10px 0 15px;
+  }
+
+  &__input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    
+    &::placeholder {
+      font-size: 14px;
+      color: #aaa;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    color: $black-color;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+/*---------- FOLLOW SECTION RESPONSIVE ---------*/
+@media screen and (max-width:1200px) {
+  .follow__input {
+    width: 87%;
+  }
+}
+@media screen and (max-width:992px) {
+  .follow__input {
+    width: 80%;
+  }
+}
+@media screen and (max-width:768px) {
+  .follow__sec {
+    flex-direction: column;
+  }
+  .follow__contact {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .follow__wr {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .follow__address {
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+  .follow__wrap {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,69 @@
+.sponsor {
+  max-width:1400px;
+  margin: 0 auto;
+  background-color: $white-color;
+  
+
+  &__sec {
+    padding: 60px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  &__list {
+    @include list-unstyled;
+    @include flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    opacity: 0.5;
+    @include transition;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__button {
+    width: 20px;
+    height: 40px;
+    background-color: #ffffff96;
+    color: $black-color !important;
+    opacity: 0.6;
+    font-size: 20px;
+    border: 1px solid;
+    border-color: #0000005d;
+    border-radius: 4px;
+    padding: 10px 5px;
+    margin-top: 30px;
+
+    &:hover {
+      opacity: 1;
+      background-color: $white-color;
+    }
+  }
+}
+/*---------- SPONSOR SECTION RESPONSIVE ----------*/
+@media screen and (max-width:992px) {
+  .sponsor__item:last-child {
+    display: none;
+  }
+  .sponsor__button {
+    display: none;
+  }
+}
+@media screen and (max-width:768px) {
+  .sponsor__item:nth-child(5) {
+    display: none;
+  }
+
+}
+@media screen and (max-width:600px) {
+  .sponsor__item:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width:500px) {
+  .sponsor__item:nth-child(3) {
+    display: none;
+  }
+}
